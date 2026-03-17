@@ -1,0 +1,43 @@
+{
+  "chapter_1": {
+    "shlok_1": {
+      "sanskrit": "धृतराष्ट्र उवाच | धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः | मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ||",
+
+      "transliteration": "Dhritarashtra uvacha | Dharmakshetre Kurukshetre samaveta yuyutsavah | Mamakah Pandavashchaiva kimakurvata Sanjaya ||",
+
+      "meaning": {
+        "english": "Dhritarashtra said: O Sanjaya, after assembling on the sacred land of Kurukshetra, eager for battle, what did my sons and the sons of Pandu do?",
+        "hindi": "धृतराष्ट्र ने कहा: हे संजय, धर्मभूमि कुरुक्षेत्र में युद्ध की इच्छा से एकत्र हुए मेरे पुत्रों और पांडु के पुत्रों ने क्या किया?"
+      },
+
+      "explanation": {
+        "english": {
+          "short": "This shlok introduces the battlefield of Kurukshetra and reflects Dhritarashtra’s anxiety about the outcome of the war.",
+          "medium": "In this verse, Dhritarashtra asks Sanjaya about the events on the battlefield. Although both armies are present, his focus remains on his own sons, revealing emotional attachment and fear of loss.",
+          "long": "This opening shlok sets the psychological and philosophical foundation of the Bhagavad Gita. Dhritarashtra, though physically blind, also displays inner blindness caused by attachment. By referring to ‘my sons’ and ‘the sons of Pandu’ separately, he unconsciously reveals bias and insecurity. The battlefield represents not just a physical war, but an inner conflict driven by desire, fear, and attachment—central themes explored throughout the Gita."
+        },
+        "hindi": {
+          "short": "यह श्लोक कुरुक्षेत्र के युद्धभूमि का परिचय देता है और धृतराष्ट्र की चिंता को दर्शाता है।",
+          "medium": "इस श्लोक में धृतराष्ट्र संजय से युद्धभूमि की स्थिति पूछते हैं। दोनों सेनाएँ उपस्थित होने के बावजूद, उनका ध्यान केवल अपने पुत्रों पर है, जो उनके मोह और भय को दर्शाता है।",
+          "long": "यह भगवद गीता का प्रारंभिक श्लोक है जो मानसिक और दार्शनिक आधार स्थापित करता है। धृतराष्ट्र केवल शारीरिक रूप से ही नहीं, बल्कि मानसिक रूप से भी अंधे हैं। ‘मेरे पुत्र’ और ‘पांडु के पुत्र’ कहकर वे अपने पक्षपात और आसक्ति को प्रकट करते हैं। यह युद्धभूमि केवल बाहरी युद्ध नहीं, बल्कि मनुष्य के भीतर चलने वाले संघर्ष का प्रतीक है।"
+        }
+      },
+
+      "life_application": {
+        "english": {
+            "short": "Attachment to outcomes creates fear and anxiety.",
+            "medium": "This shlok reminds us that when we become overly attached to results, we lose mental peace. By focusing on our actions instead of outcomes, we can reduce stress in daily life.",
+            "long": "This shlok teaches us that excessive attachment clouds judgment and leads to inner unrest. In daily life—whether in exams, career, or relationships—focusing only on 'my side' or the final result creates stress. Practicing awareness, emotional balance, and acceptance helps us face situations calmly and wisely."
+        },
+        "hindi": {
+            "short": "अधिक आसक्ति भय और चिंता को जन्म देती है।",
+            "medium": "यह श्लोक हमें याद दिलाता है कि जब हम परिणामों से अत्यधिक जुड़ जाते हैं, तो मानसिक शांति खो देते हैं। कर्म पर ध्यान केंद्रित करके हम जीवन के तनाव को कम कर सकते हैं।",
+            "long": "यह श्लोक हमें सिखाता है कि अत्यधिक मोह हमारे विवेक को ढक देता है। जीवन में परीक्षा, करियर या रिश्तों में केवल परिणाम या अपने पक्ष पर ध्यान देने से तनाव बढ़ता है। आत्म-संयम, संतुलन और स्वीकार्यता से हम परिस्थितियों का शांतिपूर्वक सामना कर सकते हैं।"
+        }
+    },
+
+
+      "image": "chapter1_shlok1.jpg"
+    }
+  }
+}

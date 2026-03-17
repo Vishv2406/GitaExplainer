@@ -1,26 +1,148 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  :root {
+    --background: 35 40% 96%;
+    --foreground: 25 30% 15%;
+    --card: 35 35% 98%;
+    --card-foreground: 25 30% 15%;
+    --popover: 35 35% 98%;
+    --popover-foreground: 25 30% 15%;
+    --primary: 25 80% 50%;
+    --primary-foreground: 35 40% 98%;
+    --secondary: 35 25% 92%;
+    --secondary-foreground: 25 30% 20%;
+    --muted: 35 20% 90%;
+    --muted-foreground: 25 15% 45%;
+    --accent: 25 70% 55%;
+    --accent-foreground: 35 40% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 35 25% 85%;
+    --input: 35 25% 88%;
+    --ring: 25 80% 50%;
+    --chart-1: 25 80% 50%;
+    --chart-2: 35 60% 60%;
+    --chart-3: 20 70% 45%;
+    --chart-4: 40 50% 55%;
+    --chart-5: 30 65% 50%;
+    --radius: 0.75rem;
+    --sidebar-background: 35 35% 97%;
+    --sidebar-foreground: 25 30% 20%;
+    --sidebar-primary: 25 80% 50%;
+    --sidebar-primary-foreground: 35 40% 98%;
+    --sidebar-accent: 35 25% 92%;
+    --sidebar-accent-foreground: 25 30% 20%;
+    --sidebar-border: 35 25% 85%;
+    --sidebar-ring: 25 80% 50%;
+  }
+  .dark {
+    --background: 25 15% 8%;
+    --foreground: 35 30% 92%;
+    --card: 25 15% 10%;
+    --card-foreground: 35 30% 92%;
+    --popover: 25 15% 10%;
+    --popover-foreground: 35 30% 92%;
+    --primary: 30 70% 55%;
+    --primary-foreground: 25 15% 8%;
+    --secondary: 25 12% 15%;
+    --secondary-foreground: 35 30% 90%;
+    --muted: 25 10% 18%;
+    --muted-foreground: 35 15% 60%;
+    --accent: 30 60% 50%;
+    --accent-foreground: 25 15% 8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 25 12% 18%;
+    --input: 25 12% 18%;
+    --ring: 30 70% 55%;
+    --chart-1: 30 70% 55%;
+    --chart-2: 35 50% 50%;
+    --chart-3: 25 60% 45%;
+    --chart-4: 40 45% 50%;
+    --chart-5: 28 55% 48%;
+    --sidebar-background: 25 15% 9%;
+    --sidebar-foreground: 35 30% 90%;
+    --sidebar-primary: 30 70% 55%;
+    --sidebar-primary-foreground: 25 15% 8%;
+    --sidebar-accent: 25 12% 15%;
+    --sidebar-accent-foreground: 35 30% 90%;
+    --sidebar-border: 25 12% 18%;
+    --sidebar-ring: 30 70% 55%;
+  }
+}
+
+/* Sepia reading mode */
+  .sepia {
+    --background: 38 35% 92%;
+    --foreground: 30 25% 18%;
+    --card: 38 30% 95%;
+    --card-foreground: 30 25% 18%;
+    --popover: 38 30% 95%;
+    --popover-foreground: 30 25% 18%;
+    --primary: 28 60% 45%;
+    --primary-foreground: 38 35% 96%;
+    --secondary: 35 20% 88%;
+    --secondary-foreground: 30 25% 22%;
+    --muted: 35 18% 85%;
+    --muted-foreground: 30 15% 40%;
+    --accent: 28 50% 50%;
+    --accent-foreground: 38 35% 96%;
+    --destructive: 0 62.8% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 35 20% 82%;
+    --input: 35 20% 85%;
+    --ring: 28 60% 45%;
+  }
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Smooth page transitions */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
