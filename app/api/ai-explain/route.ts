@@ -22,7 +22,7 @@ ${shlok}
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "mistral",
+        model: "mistral:latest",
         prompt,
         stream: false,
       }),
