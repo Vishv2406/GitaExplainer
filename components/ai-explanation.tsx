@@ -2,12 +2,16 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import { Loader2 } from "lucide-react"
 
 interface AIExplanationProps {
   shlok: string
+  meaning: string
+  chapter: number
+  verse: number
 }
 
-export function AIExplanation({ shlok }: AIExplanationProps) {
+export function AIExplanation({ shlok, meaning, chapter, verse }: AIExplanationProps) {
   const [loading, setLoading] = useState(false)
   const [explanation, setExplanation] = useState("")
   const [error, setError] = useState("")
@@ -19,10 +23,8 @@ export function AIExplanation({ shlok }: AIExplanationProps) {
     try {
       const res = await fetch("/api/ai-explain", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ shlok }),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ shlok, meaning, chapter, verse }),
       })
 
       const data = await res.json()
@@ -47,7 +49,14 @@ export function AIExplanation({ shlok }: AIExplanationProps) {
 
       {!explanation && (
         <Button onClick={getExplanation} disabled={loading}>
-          {loading ? "Thinking..." : "Explain this Shlok"}
+          {loading ? (
+            <span className="flex items-center gap-2">
+              <Loader2 className="h-4 w-4 animate-spin" />
+              Thinking...
+            </span>
+          ) : (
+            "Explain this Shlok"
+          )}
         </Button>
       )}
 

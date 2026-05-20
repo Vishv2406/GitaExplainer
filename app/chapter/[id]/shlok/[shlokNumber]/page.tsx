@@ -101,7 +101,12 @@ export default async function ShlokPage({ params }: ShlokPageProps) {
         </article>
 
         {/* AI Explanation */}
-        <AIExplanation shlok={shlok.sanskrit} />
+        <AIExplanation 
+          shlok={shlok.sanskrit}
+          meaning={shlok.englishMeaning}
+          chapter={chapterNumber}
+          verse={shlokNum}
+        />
 
 
         {/* Reflection */}
